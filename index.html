@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Etiquetas Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Luna">
+    <meta name="keywrods" content="Francisco Luna, Portfolio, Junior Developer, Desarrollador Web, developer" >
+    <meta name="description" content="Desarrolador web junior con 1 año de experiencia trabajando con lenguajes como Javascript y Python.">
+    <title>Francisco Luna - Junior Developer</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Fuente -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <!-- <a href="#" class="enlace">
+                <img src="logo.png" alt="" class="logo">
+            </a> -->
+            <ul class="menu">
+                <li><a class="active" href="#">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mi</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- Lenguajes -->
+    <div id="particles-js">
+        <div class="lenguajes"></div>
+    </div>
+
+    <!-- Enlaces JavaScript -->
+    <script src="js/particles.min.js"></script>
+    <script src="js/particlesjs-config.json"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/menu-2.js"></script>
+
+    <!-- Sobre mi -->
+    <div id="sobre-mi">
+        <h2>Sobre Mi</h2>
+    </div>
+        <p>
+            Hola, soy Francisco Luna, un desarrolador web junior.
+            Recientemente finalicé la segunda etapa del bootcamp del INFORMATORIO donde trabajando en equipo realizamos como proyecto final el desarrollo de un blog hecho en python. 
+            Estoy buscando formar parte de un proyecto que me permita demostrar mis habilidades y adquirir experiencia.
+        </p>
+
+    <!-- Habilidades -->
+    <div id="habilidades">
+        <h2>Habilidades</h2>
+    </div>
+
+        <div id="lenguajes">
+
+            <div class="html">
+                <img src="img/html.svg" alt="HTML" title="HTML">
+            </div>
+
+            <div class="css">
+                <img src="img/css.svg" alt="CSS" title="CSS">
+            </div>
+
+            <div class="js">
+                <img src="img/javascript.svg" alt="JavaScript" title="JavaScript">
+
+            </div>
+
+            <div class="python">
+                <img src="img/python.svg" alt="Python" title="Python">
+            </div>
+
+            <div class="django">
+                <img src="img/django.svg" alt="Django" title="Django">
+            </div>    
+
+            <div class="mysql">
+                <img src="img/mysql.svg" alt="MySQL">
+            </div>
+
+    </div>
+
+    <!-- Proyectos -->
+    <div id="proyectos">
+        <h2>Proyectos</h2>
+        <figure>
+            <img src="img/logo-uocra.svg">
+            <div class="capa">
+                <p>ONG fundada en 1993, dedicada a la formación profesional de trabajadores/as.</p>
+                <a href="https://fundacion-uocra.herokuapp.com/" target="_blank">Ver sitio</a>
+            </div>      
+        </figure>
+    </div>
+
+    <!-- Contacto -->
+    <div id="contacto">
+        <h2>Contacto</h2>
+        <form class="formulario" action="https://formspree.io/f/mnqrjqyb" method="POST">
+            <div class="formulario-contenedor">
+                <input type="text" class="formulario-input" placeholder="Nombre" name="name" id="name" required>
+                <input type="email" class="formulario-input" placeholder="Email" name="email" id="email" required>
+                <textarea class="formulario-input formulario-input-mensaje" placeholder="Mensaje" name="message" required></textarea>
+                <input type="submit" value="Enviar" class="boton">
+                <p class="warnings" id="warnings"></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="github">
+            <a href="https://github.com/franciscoeluna" target="_blank">
+                <img src="img/github.svg" alt="github">
+            </a>
+        </div>
+
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/francisco-luna-162b94249/" target="_blank">
+                <img src="img/linkedin.svg" alt="linkedin">
+            </a>
+        </div>
+        
+        <div class="copyright">
+            © 2022 Copyright: Francisco Luna
+        </div>
+    </footer>
+
+</body>
+</html>
