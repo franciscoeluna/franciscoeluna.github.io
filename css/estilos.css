@@ -1,0 +1,395 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+div[id] {
+    scroll-margin-top: 50px;
+}
+
+/* Particulas */
+#particles-js{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(45, 45, 45);
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.lenguajes{
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    font-size: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: slide 20s infinite;
+    background: none;
+}
+
+@keyframes slide {
+    11.1%{
+        background: url(../img/html.svg);
+    }
+    22.2%{
+        background: url(../img/css.svg);
+    }
+    33.3%{
+        background: url(../img/javascript.svg);
+    }
+    44.4% {
+        background: url(../img/nodejs.svg);
+    }
+    55.5%{
+        background: url(../img/react.svg);
+    }
+    66.6%{
+        background: url(../img/java.svg);
+    }
+    77.7%{
+        background: url(../img/python.svg);
+    }
+    88.8%{
+        background: url(../img/django.svg);
+    }
+    100%{
+        background: url(../img/mysql.svg);
+    }
+}
+
+#sobre-mi, #habilidades, #proyectos, #contacto, #curriculum{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    display: block;
+    text-align: center;
+}
+
+.título{
+    letter-spacing: 1px;
+    color: rgb(48, 48, 48);
+    padding: 15px 0 15px 0;
+}
+
+p{
+    font-size: 20px;
+    text-transform: none;
+    text-align: justify;
+    line-height: 28px;
+    letter-spacing: .2px;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+/* Lenguajes */
+.html, .css, .js, .nodejs, .react, .java, .python, .django, .mysql{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(250, 95, 73), rgb(235, 130, 116));
+    box-shadow: 0 10px 15px -3px rgb(0, 0, 0, 0.4);
+    height: 225px;
+    width: 125px;
+    border-radius: 16px;
+}
+
+.css{    
+    background: linear-gradient(rgb(122, 169, 239), rgb(168, 192, 230));
+}
+
+.js{
+    background: linear-gradient(rgb(239, 203, 48), rgb(236, 213, 107));
+}
+
+.nodejs{
+    background: linear-gradient(rgb(160, 223, 84), rgb(191, 235, 138));
+}
+
+.react{
+    background: linear-gradient(rgb(202, 255, 255), rgb(221, 243, 243));
+}
+
+.java{
+    background: linear-gradient(rgb(240, 240, 240), rgb(253, 253, 253));
+}
+
+.python{
+    background: linear-gradient(rgb(104, 150, 219), rgb(149, 183, 235));
+}
+
+.django{
+    background: linear-gradient(rgb(30, 98, 71), rgb(51, 156, 114));
+}
+
+.mysql{
+    background: linear-gradient(rgb(68, 121, 161), rgb(120, 159, 189));
+}
+
+#lenguajes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#lenguajes img{
+    height: 100px;
+    width: 100px;
+}
+
+.html:hover, .css:hover, .js:hover, .nodejs:hover, .react:hover, .java:hover, .python:hover, .django:hover, .mysql:hover{
+    transform: scale(110%);
+    transition: all .4s ease;
+    position: relative;
+}
+
+/* Proyectos */
+#proyectos{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+/* Proyecto-1 */
+#proyectos .proyecto-1, .proyecto-2{
+    background-color: rgb(240, 240, 240, 0.85);
+    box-shadow: 0 10px 15px -3px rgb(0, 0, 0, 0.4);
+    display: inline-block;
+    position: relative;
+    width: 320px;
+    height: 200px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 16px;
+    margin: 0px 10px 0px 10px;
+}
+
+#proyectos .proyecto-1 img, .proyecto-2 img{
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+
+#proyectos .proyecto-1 .capa, .proyecto-2 .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 44, 44, 0.945);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    cursor: auto;
+}
+
+#proyectos .proyecto-1:hover > .capa, .proyecto-2:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+#proyectos .proyecto-1:hover > img, .proyecto-2:hover > img{
+    transform: scale(1.2);
+}
+
+#proyectos .proyecto-1 a, .proyecto-2 a{
+    font-size: 18px;
+    color: #fff;
+    padding: 1px 40px 1px 40px;
+    border-radius: 40px;
+    border: 2px solid rgb(68, 183, 139);
+    text-decoration: none;
+}
+
+#proyectos .proyecto-1 a:hover{
+    background-color: rgb(68, 183, 139);
+}
+
+
+#proyectos .proyecto-1 .capa p, .proyecto-2 .capa p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin: 25px 40px 20px 40px;
+    transition: all 400ms ease-out;
+    text-align: center;
+}
+
+/* Proyecto-2 */
+#proyectos .proyecto-2 a{
+    border: 2px solid rgb(239, 203, 48);
+}
+
+#proyectos .proyecto-2 a:hover{
+    background-color: rgb(239, 203, 48);
+}
+
+/* Contacto */
+#contacto{
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    padding-bottom: 50px;
+}
+
+.formulario{
+    background-color: #fff;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 16px;
+    padding: 1em 1em;
+}
+
+.formulario-contenedor{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.formulario-input{
+    font-size: 1rem;
+    padding:  .8em 1em;
+    outline: none;
+    border: none;
+    border: .3px solid rgb(214, 214, 214);
+    border-radius: 16px;
+}
+
+.formulario-input-mensaje{
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: 1.5em;
+}
+
+.boton{
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: #089fe0;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    padding: .7em 0;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Footer */
+footer{
+    background: rgb(223, 223, 223);
+    text-align: center;
+}
+
+.github, .linkedin{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.copyright{
+    font-size: 16px;
+    letter-spacing: .3px;
+    text-transform: none;
+    display: block;
+    background: rgb(193, 193, 193);
+    color: rgb(48, 48, 48);
+    padding: 15px;
+}
+
+/* Responsive */
+
+/* Celular */
+@media (max-width: 768px){
+    div[id] {
+        scroll-margin-top: 75px;
+    }
+
+    p{
+        margin: 0px 40px 0px 40px;
+    }
+
+    /* Lenguajes */
+    .lenguajes{
+        height: 155px;
+        width: 155px;
+    }
+
+    #lenguajes img{
+        height: 80px;
+        width: 80px;
+        margin: 5px 140px 5px 20px;
+    }
+
+    .html, .css, .js, .nodejs, .react, .java, .python, .django, .mysql{
+        background: linear-gradient(90deg, rgb(250, 95, 73), rgb(235, 130, 116));
+        height: 90px;
+        width: 280px;
+        margin: 10px;
+    }
+
+    .css{    
+        background: linear-gradient(90deg, rgb(122, 169, 239), rgb(168, 192, 230));
+    }
+    
+    .js{
+        background: linear-gradient(90deg, rgb(239, 203, 48), rgb(236, 213, 107));
+    }
+    
+    .nodejs{
+        background: linear-gradient(90deg, rgb(160, 223, 84), rgb(191, 235, 138));
+    }
+    
+    .react{
+        background: linear-gradient(90deg, rgb(202, 255, 255), rgb(221, 243, 243));
+    }
+    
+    .java{
+        background: linear-gradient(90deg, rgb(240, 240, 240), rgb(253, 253, 253));
+    }
+    
+    .python{
+        background: linear-gradient(90deg, rgb(104, 150, 219), rgb(149, 183, 235));
+    }
+    
+    .django{
+        background: linear-gradient(90deg, rgb(30, 98, 71), rgb(51, 156, 114));
+    }
+    
+    .mysql{
+        background: linear-gradient(90deg, rgb(68, 121, 161), rgb(120, 159, 189));
+    }
+
+    /* Proyectos */
+    #proyectos .proyecto-1, .proyecto-2{
+        margin: 10px;
+    }
+
+    .copyright{
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 990px){
+    .html, .css, .js, .nodejs, .react, .java, .python, .django, .mysql{
+        margin: 10px 8px 10px 8px;
+        height: 210px;
+    }
+}
+
+/* PC */
+@media (min-width: 991px) {
+    .html, .css, .js, .nodejs, .react, .java, .python, .django, .mysql{
+        margin: 10px 8px 10px 8px;
+    }
+}
