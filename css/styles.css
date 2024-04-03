@@ -281,7 +281,7 @@ p {
 .boton {
     font-size: 15px;
     letter-spacing: 1px;
-    background-color: rgb(79, 143, 238);
+    background-color: rgb(120, 168, 223);
     color: #fff;
     border: none;
     padding: .7em 0;
@@ -290,7 +290,7 @@ p {
 }
 
 .boton:hover {
-    background-color: rgb(55, 126, 240);
+    background-color: rgb(90, 151, 221);
 }
 
 /* Footer */
