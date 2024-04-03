@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Etiquetas Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Luna">
+    <meta name="keywrods" content="Francisco Luna, Portfolio, Web Developer, Desarrollador Web, developer" >
+    <meta name="description" content="Desarrolador web freelance con conocimientos en lenguajes frontend y backend.">
+    <title aria-label="Francisco Luna, desarrolador web">Francisco Luna { Web Developer }</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Lenguajes -->
+    <div id="particles-js">
+        <div class="lenguajes"></div>
+    </div>
+
+    <!-- Enlaces JavaScript -->
+    <script src="js/particles.min.js"></script>
+    <script src="js/particulas.js"></script>
+
+    <script src="js/contacto.js"></script>
+    <script src="js/particlesjs-config.json"></script>
+
+    <!-- Sobre mi -->
+    <section tabindex="1">
+        <h3 aria-label="Sección 1 - Sobre Mi">Sobre Mi</h3>
+        <p>
+            Soy Francisco Luna, desarrollador web.
+            Empecé a formarme como programador en el bootcamp del Informatorio donde trabajamos con lenguajes de frontend y backend. Reforcé los conocimientos y prácticas con los cursos de SoyDalto, realizando proyectos de forma individual. 
+            Busco formar parte de un proyecto que me permita explotar mis habilidades y adquirir más experiencia.
+        </p>
+    </section>
+
+    <!-- Habilidades -->
+    <section tabindex="2">
+        <h3 aria-label="Sección 2 - Habilidades">Habilidades</h3>
+        <div class="habilidades">
+            <div class="habilidades__bloque bloque--html">
+                <img src="img/html.svg" alt="HTML" title="HTML">
+            </div>
+
+            <div class="habilidades__bloque bloque--css">
+                <img src="img/css.svg" alt="CSS" title="CSS">
+            </div>
+
+            <div class="habilidades__bloque bloque--js">
+                <img src="img/javascript.svg" alt="JavaScript" title="JavaScript">
+
+            </div>
+
+            <div class="habilidades__bloque bloque--nodejs">
+                <img src="img/nodejs.svg" alt="NodeJs" title="NodeJs">
+            </div>
+
+            <div class="habilidades__bloque bloque--react">
+                <img src="img/react.svg" alt="React" title="React">
+            </div>
+
+            <div class="habilidades__bloque bloque--java">
+                <img src="img/java.svg" alt="Java" title="Java">
+            </div>
+
+            <div class="habilidades__bloque bloque--python">
+                <img src="img/python.svg" alt="Python" title="Python">
+            </div>
+
+            <div class="habilidades__bloque bloque--django">
+                <img src="img/django.svg" alt="Django" title="Django">
+            </div>    
+
+            <div class="habilidades__bloque bloque--mysql">
+                <img src="img/mysql.svg" alt="MySQL" title="MySQL">
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section tabindex="3">
+        <h3 aria-label="Sección 3 - Proyectos">Proyectos</h3>
+        <div class="proyectos">
+            <div class="proyectos__bloque bloque--blog" aria-label="Proyecto 1, blog de noticias desarrollado con Django framework">
+                <img src="img/django_project.svg" alt="Django" title="Django">
+                <div class="capa">
+                    <p>Blog de noticias desarrollado con Django framework.</p>
+                    <a href="https://blog-d258.onrender.com" target="_blank">Ver sitio</a>
+                </div>      
+            </div>
+            <div class="proyectos__bloque bloque--contraseñas" aria-label="Proyecto 2, generador de contraseñas desarrollado con Javascript">
+                <img src="img/js_project1.svg" alt="JavaScript" title="JavaScript">
+                <div class="capa">
+                    <p>Generador de contraseñas desarrollado con Javascript.</p>
+                    <a href="https://password-97i1.onrender.com" target="_blank">Ver sitio</a>
+                </div>      
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contacto -->
+    <section>
+        <div class="contacto">
+            <h3 aria-label="Sección 4 - Contacto" tabindex="4">Contacto</h3>
+            <form class="formulario" action="https://formspree.io/f/mnqrjqyb" method="POST">
+                <div class="formulario-contenedor">
+                    <input type="text" class="formulario-input" placeholder="Nombre" name="name" id="name" required>
+                    <input type="email" class="formulario-input" placeholder="Correo electrónico" name="email" id="email" required>
+                    <textarea class="formulario-input formulario-input-mensaje" placeholder="Mensaje" name="message" required></textarea>
+                    <input type="submit" value="Enviar" class="boton" aria-label="Haz click para enviar el mensaje">
+                    <p class="warnings" id="warnings"></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="github">
+            <a href="https://github.com/franciscoeluna" target="_blank" aria-label="Visitar página de Github">
+                <img src="img/github.svg" alt="Github" title="Github">
+            </a>
+        </div>
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/francisco-luna-162b94249/" target="_blank" aria-label="Visitar página de Linkedin">
+                <img src="img/linkedin.svg" alt="Linkedin" title="Linkedin">
+            </a>
+        </div>
+        <div class="copyright" aria-label="Copyright Francisco Luna, todos los derechos reservados">
+            Copyright © Francisco Luna. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
