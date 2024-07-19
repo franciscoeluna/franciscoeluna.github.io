@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto';
+}
+
+div[id] {
+    scroll-margin-top: 50px;
+}
+
+/* Particulas */
+#particles-js {
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(45, 45, 45);
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.lenguajes {
+    height: 210px;
+    width: 210px;
+    position: absolute;
+    font-size: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: slidein 20s infinite;
+    background: none;
+    opacity: 86%;
+}
+
+@keyframes slidein {
+
+    25%{
+        background: url(../img/python.svg);
+    }
+
+    50% {
+        background: url(../img/pandas.svg);
+    }
+
+    75%{
+        background: url(../img/powerbi.svg);
+    }
+
+    100%{
+        background: url(../img/mysql.svg);
+    }
+}
+
+/* Secciones */
+body, section {
+    background-color: rgb(245, 245, 247);
+    text-align: center;
+}
+
+/* Títulos */
+h3 {
+    font-size: 1.8em;
+    color: rgb(48, 48, 48);
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 15px;
+}
+
+/* Sobre Mi */
+p {
+    font-size: 20px;
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: .2px;
+    text-wrap: pretty;
+    line-height: 27px;
+    margin: 0 130px;
+}
+
+/* Habilidades */
+.habilidades {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.habilidades img {
+    height: 100px;
+    width: 100px;
+}
+
+.habilidades, .proyectos {
+    margin: 10px 0 30px 0;
+}
+
+.habilidades__bloque {
+    margin: 0 6px;
+}
+
+.bloque--python, .bloque--pandas, .bloque--powerbi, .bloque--mysql {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(104, 150, 219), rgb(149, 183, 235));
+    box-shadow: 0 10px 15px -3px rgb(0, 0, 0, 0.4);
+    height: 225px;
+    width: 125px;
+    border-radius: 16px;
+}
+
+.bloque--pandas {
+    background: linear-gradient(rgb(219, 219, 219), rgb(253, 253, 253));
+}
+
+.bloque--powerbi {
+    background: linear-gradient(rgb(240, 141, 116), rgb(245, 200, 76));
+}
+
+.bloque--mysql {
+    background: linear-gradient(rgb(68, 121, 161), rgb(135, 168, 194));
+}
+
+.bloque--python:hover, .bloque--pandas:hover, .bloque--powerbi:hover, .bloque--mysql:hover {
+    transform: scale(110%);
+    transition: all .4s ease;
+    position: relative;
+}
+
+/* Proyectos */
+.proyectos {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Proyecto-1 */
+.proyectos .bloque--rentabilidad, .bloque--contraseñas {
+    background-color: rgba(250, 250, 250, 0.85);
+    box-shadow: 0 10px 15px -3px rgb(0, 0, 0, 0.4);
+    display: inline-block;
+    position: relative;
+    width: 320px;
+    height: 200px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 16px;
+    margin: 0 10px;
+}
+
+.proyectos .bloque--rentabilidad img, .bloque--contraseñas img {
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    padding-top: 40px;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+
+.proyectos .bloque--rentabilidad .capa, .bloque--contraseñas .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 44, 44, 0.945);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    cursor: auto;
+}
+
+.proyectos .bloque--rentabilidad:hover > .capa, .bloque--contraseñas:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.proyectos .bloque--rentabilidad:hover > img, .bloque--contraseñas:hover > img {
+    transform: scale(1.2);
+}
+
+.proyectos .bloque--rentabilidad a, .bloque--contraseñas a {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    padding: 1px 40px;
+    border: 2px solid rgb(159, 191, 218);
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.proyectos .bloque--rentabilidad a:hover{
+    background-color: rgb(159, 191, 218);
+}
+
+.proyectos .bloque--rentabilidad .capa p, .bloque--contraseñas .capa p {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    margin: 25px 40px;
+    transition: all 400ms ease-out;
+    text-align: center;
+}
+
+/* Proyecto-2 */
+/* .proyectos .bloque--contraseñas a {
+    border: 2px solid rgb(239, 203, 48);
+}
+
+.proyectos .bloque--contraseñas a:hover {
+    background-color: rgb(239, 203, 48);
+} */
+
+/* Contacto */
+.contacto {
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    padding-bottom: 50px;
+}
+
+.formulario {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 16px;
+    padding: 1em 1em;
+}
+
+.formulario-contenedor {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.formulario-input {
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: .3px solid rgb(214, 214, 214);
+    border-radius: 16px;
+}
+
+.formulario-input-mensaje {
+    resize: none;
+    padding: 1.8em 1em 4em;
+    margin-bottom: 1.5em;
+}
+
+.boton {
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: rgb(120, 168, 223);
+    color: #fff;
+    border: none;
+    padding: .7em 0;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: rgb(90, 151, 221);
+}
+
+/* Footer */
+footer {
+    background: rgb(223, 223, 223);
+    text-align: center;
+}
+
+.github, .linkedin {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.copyright {
+    font-size: 15px;
+    letter-spacing: .2px;
+    text-transform: none;
+    display: block;
+    background: rgb(193, 193, 193);
+    color: rgb(48, 48, 48);
+    padding: 15px;
+}
+
+/* Responsive */
+
+/* Celular */
+@media (max-width: 768px) {
+    div[id] {
+        scroll-margin-top: 75px;
+    }
+
+    p{
+        margin: 0 40px;
+    }
+
+    /* Lenguajes */
+    .lenguajes {
+        height: 200px;
+        width: 200px;
+    }
+
+    .habilidades img {
+        height: 80px;
+        width: 80px;
+        margin: 5px 100px 5px 10px;
+    }
+
+    .bloque--python, .bloque--pandas, .bloque--powerbi, .bloque--mysql {
+        background: linear-gradient(90deg, rgb(104, 150, 219), rgb(149, 183, 235));
+        height: 90px;
+        width: 280px;
+        margin: 10px;
+    }
+
+    .bloque--pandas {
+        background: linear-gradient(90deg, rgb(219, 219, 219), rgb(253, 253, 253));
+    }
+    
+    .bloque--powerbi {
+        background: linear-gradient(90deg, rgb(240, 141, 116), rgb(245, 200, 76));
+    }
+    
+    .blomysql {
+        background: linear-gradient(90deg rgb(68, 121, 161), rgb(135, 168, 194));
+    }
+
+    /* Proyectos */
+    .proyectos .bloque--blog, .bloque--contraseñas {
+        margin: 10px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 990px) {
+    .bloque--python, .bloque--pandas, .bloque--powerbi, .bloque--mysql {
+        margin: 12px 8px;
+        height: 210px;
+    }
+}
+
+/* Pc */
+@media (min-width: 991px) {
+    .bloque--python, .bloque--pandas, .bloque--powerbi, .bloque--mysql {
+        margin: 10px 8px;
+    }
+}
