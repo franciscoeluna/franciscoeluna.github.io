@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto';
+}
+
+div[id] {
+    scroll-margin-top: 50px;
+}
+
+/* Particulas */
+#particles-js {
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(45, 45, 45);
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.lenguajes {
+    height: 210px;
+    width: 210px;
+    position: absolute;
+    font-size: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: slidein 15s infinite;
+    background: none;
+    opacity: 85%;
+}
+
+@keyframes slidein {
+
+    20%{
+        background: url(../img/mysql.svg);
+    }
+
+    40% {
+        background: url(../img/python.svg);
+    }
+
+    60%{
+        background: url(../img/pandas.svg);
+    }
+
+    80%{
+        background: url(../img/numpy.svg);
+    }
+
+    100%{
+        background: url(../img/powerbi.svg);
+    }
+}
+
+/* Secciones */
+body, section {
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+}
+
+/* Títulos */
+h3 {
+    font-size: 1.8em;
+    color: rgb(48, 48, 48);
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 15px;
+}
+
+/* Sobre Mi */
+p {
+    font-size: 20px;
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: .2px;
+    text-wrap: pretty;
+    line-height: 27px;
+    margin: 0 130px;
+}
+
+/* Habilidades */
+.habilidades {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.habilidades img {
+    height: 100px;
+    width: 100px;
+}
+
+.habilidades, .proyectos {
+    margin: 10px 0 30px 0;
+}
+
+.habilidades__bloque {
+    margin: 0 6px;
+}
+
+.bloque--mysql, .bloque--python, .bloque--pandas, .bloque--numpy, .bloque--powerbi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(235, 235, 235), rgb(219, 219, 219));
+    box-shadow: 0 10px 15px -3px rgb(0, 0, 0, 0.4);
+    height: 230px;
+    width: 130px;
+    border-radius: 16px;
+    transform: scale(1);
+    transition: transform 0.4s ease, top 0.4s ease, left 0.4s ease;
+    position: relative;
+}
+
+.bloque--python {
+    background: linear-gradient(rgb(108, 152, 219), rgb(171, 198, 238));
+}
+
+.bloque--pandas {
+    background: linear-gradient(rgb(219, 219, 219), rgb(253, 253, 253));
+}
+
+.bloque--numpy {
+    background: linear-gradient(rgb(177, 193, 231), rgb(230, 230, 230));
+}
+
+.bloque--powerbi {
+    background: linear-gradient(rgb(241, 147, 124), rgb(243, 199, 77));
+}
+
+.bloque--mysql:hover, .bloque--python:hover, .bloque--pandas:hover, .bloque--numpy:hover, .bloque--powerbi:hover {
+    transform: scale(1.1);
+}
+
+/* Proyectos */
+.proyectos {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Proyecto-1 */
+.proyectos .bloque--rentabilidad, .bloque--gestion_ventas {
+    background-color: rgb(252, 252, 252, .85);
+    box-shadow: 1px 8px 15px -2px rgb(0, 0, 0, 0.4);
+    display: inline-block;
+    position: relative;
+    width: 320px;
+    height: 200px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 16px;
+    margin: 0 8px;
+}
+
+.proyectos .bloque--rentabilidad img, .bloque--gestion_ventas img {
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    padding-top: 40px;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+
+.proyectos .bloque--rentabilidad .capa, .bloque--gestion_ventas .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 44, 44, 0.945);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    cursor: auto;
+}
+
+.proyectos .bloque--rentabilidad:hover > .capa, .bloque--gestion_ventas:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.proyectos .bloque--rentabilidad:hover > img, .bloque--gestion_ventas:hover > img {
+    transform: scale(1.2);
+}
+
+.proyectos .bloque--rentabilidad a, .bloque--gestion_ventas a {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    padding: 1px 40px;
+    border: 2px solid rgb(147, 183, 212);
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.proyectos .bloque--rentabilidad a:hover {
+    background-color: rgb(147, 183, 212);
+}
+
+.proyectos .bloque--rentabilidad .capa p, .bloque--gestion_ventas .capa p {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    margin: 25px 40px;
+    transition: all 400ms ease-out;
+    text-align: center;
+}
+
+/* Proyecto-2 */
+.bloque--gestion_ventas {
+    background-color: rgba(215, 215, 215);
+}
+
+.proyectos .bloque--gestion_ventas a {
+    border: 2px solid rgb(284, 184, 100);
+}
+
+.proyectos .bloque--gestion_ventas a:hover {
+    background-color: rgb(284, 184, 100);
+}
+
+/* Contacto */
+.contacto {
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(to top, rgb(165, 197, 233) 0%, rgb(231, 240, 253) 100%);
+    padding-bottom: 50px;
+}
+
+.formulario {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 16px;
+    padding: 1em 1em;
+}
+
+.formulario-contenedor {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.formulario-input {
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: .3px solid rgb(214, 214, 214);
+    border-radius: 16px;
+}
+
+.formulario-input-mensaje {
+    resize: none;
+    padding: 1.8em 1em 4em;
+    margin-bottom: 1.5em;
+}
+
+.boton {
+    font-size: 15px;
+    letter-spacing: .6px;
+    background-color: rgb(120, 168, 223);
+    color: #fff;
+    border: none;
+    padding: .7em 0;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: rgb(90, 151, 221);
+}
+
+/* Footer */
+footer {
+    background: rgb(223, 223, 223);
+    text-align: center;
+}
+
+.github, .linkedin {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.copyright {
+    font-size: 15px;
+    letter-spacing: .2px;
+    text-transform: none;
+    display: block;
+    background: rgb(193, 193, 193);
+    color: rgb(48, 48, 48);
+    padding: 15px;
+}
+
+/* Responsive */
+
+/* Celular */
+@media (max-width: 768px) {
+    div[id] {
+        scroll-margin-top: 75px;
+    }
+
+    /* Particulas */
+    #particles-js {
+        height: 75vh;
+    }
+
+    /* Sobre Mi */
+    p{
+        font-size: 18px;
+        margin: 0 40px;
+    }
+
+    /* Lenguajes */
+    .lenguajes {
+        height: 190px;
+        width: 190px;
+    }
+
+    .habilidades img {
+        height: 80px;
+        width: 80px;
+        margin: 5px 100px 5px 10px;
+    }
+
+    .bloque--mysql, .bloque--python, .bloque--pandas, .bloque--numpy, .bloque--powerbi {
+        background: linear-gradient(90deg, rgb(235, 235, 235), rgb(219, 219, 219));
+        height: 95px;
+        width: 285px;
+        margin: 8px;
+    }
+
+    .bloque--python {
+        background: linear-gradient(90deg, rgb(117, 161, 228), rgb(171, 198, 238));
+    }
+
+    .bloque--pandas {
+        background: linear-gradient(90deg, rgb(219, 219, 219), rgb(253, 253, 253));
+    }
+
+    .bloque--numpy {
+        background: linear-gradient(90deg, rgb(177, 193, 231), rgb(230, 230, 230));
+    }
+    
+    .bloque--powerbi {
+        background: linear-gradient(90deg, rgb(241, 147, 124), rgb(243, 199, 77));
+    }
+
+    /* Proyectos */
+    .proyectos .bloque--rentabilidad, .bloque--gestion_ventas {
+        margin: 8px;
+    }
+
+    /* Contacto */
+    .formulario {
+        width: 85%;
+    }
+
+    /* Footer */
+    .copyright {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 990px) {
+    .bloque--python, .bloque--pandas, .bloque--powerbi, .bloque--mysql {
+        margin: 12px 8px;
+        height: 210px;
+    }
+}
+
+/* Pc */
+@media (min-width: 991px) {
+    .bloque--mysql, .bloque--python, .bloque--pandas, .bloque--numpy, .bloque--powerbi {
+        margin: 10px 7px;
+    }
+}

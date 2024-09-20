@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Etiquetas Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Luna">
+    <meta name="keywrods" content="Francisco Luna, Portfolio, Data Analyst, Analista de Datos" >
+    <meta name="description" content="Analista de datos, transformación de datos y visualización interactiva.">
+    <title aria-label="Francisco Luna, analista de datos">Francisco Luna | Analista de Datos </title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Lenguajes -->
+    <div id="particles-js">
+        <div class="lenguajes"></div>
+    </div>
+
+    <!-- Enlaces JavaScript -->
+    <script src="js/particles.min.js"></script>
+    <script src="js/particulas.js"></script>
+
+    <script src="js/contacto.js"></script>
+    <script src="js/particlesjs-config.json"></script>
+
+    <!-- Sobre mi -->
+    <section tabindex="1">
+        <h3 aria-label="Sección 1 - Sobre Mi">Sobre Mi</h3>
+        <p>
+            Soy Francisco Luna, analista de datos. 
+            Mi objetivo es simplificar la complejidad de la información para ofrecer perspectivas claras y accionables. Me especializo en analizar grandes conjuntos de datos sin procesar, aplicando técnicas estadísticas avanzadas y creando visualizaciones efectivas para una toma de decisiones basada en datos.
+        </p>
+    </section>
+
+    <!-- Habilidades -->
+    <section tabindex="2">
+        <h3 aria-label="Sección 2 - Habilidades">Habilidades</h3>
+        <div class="habilidades">
+            <div class="habilidades__bloque bloque--mysql">
+                <img src="img/mysql.svg" alt="MySQL" title="MySQL">
+            </div>
+
+            <div class="habilidades__bloque bloque--python">
+                <img src="img/python.svg" alt="Python" title="Python">
+            </div>
+
+            <div class="habilidades__bloque bloque--pandas">
+                <img src="img/pandas.svg" alt="Pandas" title="Pandas">
+            </div>
+
+            <div class="habilidades__bloque bloque--numpy">
+                <img src="img/numpy.svg" alt="NumPy" title="NumPy">
+            </div>
+
+            <div class="habilidades__bloque bloque--powerbi">
+                <img src="img/powerbi.svg" alt="Power BI" title="Power BI">
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section tabindex="3">
+        <h3 aria-label="Sección 3 - Proyectos">Proyectos</h3>
+        <div class="proyectos">
+            <div class="proyectos__bloque bloque--rentabilidad" aria-label="Proyecto 1, cálculo de rentabilidad usando SQL y Python.">
+                <img src="img/rentabilidad.svg" alt="Proyecto 1" title="Proyecto 1">
+                <div class="capa">
+                    <p>Cálculo de rentabilidad usando SQL y Python.</p>
+                    <a href="https://github.com/franciscoeluna/rentabilidad" target="_blank">Ver código</a>
+                </div>      
+            </div>
+            <div class="proyectos__bloque bloque--gestion_ventas" aria-label="Proyecto 2, gestión de ventas utilizando archivos csv.">
+                <img src="img/gestion_ventas.svg" alt="Proyecto 2" title="Proyecto 2">
+                <div class="capa">
+                    <p>Gestión de ventas utilizando archivos csv.</p>
+                    <a href="https://github.com/franciscoeluna/laboratorio" target="_blank">Ver código</a>
+                </div>      
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contacto -->
+    <section>
+        <div class="contacto">
+            <h3 aria-label="Sección 4 - Contacto" tabindex="4">Contacto</h3>
+            <form class="formulario" action="https://formspree.io/f/mnqrjqyb" method="POST">
+                <div class="formulario-contenedor">
+                    <input type="text" class="formulario-input" placeholder="Nombre" name="name" id="name" required>
+                    <input type="email" class="formulario-input" placeholder="Correo electrónico" name="email" id="email" required>
+                    <textarea class="formulario-input formulario-input-mensaje" placeholder="Mensaje" name="message" required></textarea>
+                    <input type="submit" value="Enviar" class="boton" aria-label="Haz click para enviar el mensaje">
+                    <p class="warnings" id="warnings"></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="github">
+            <a href="https://github.com/franciscoeluna" target="_blank" aria-label="Visitar página de GitHub">
+                <img src="img/github.svg" alt="GitHub" title="GitHub">
+            </a>
+        </div>
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/francisco-ezequiel-luna-162b94249/" target="_blank" aria-label="Visitar página de Linkedin">
+                <img src="img/linkedin.svg" alt="Linkedin" title="Linkedin">
+            </a>
+        </div>
+        <div class="copyright" aria-label="Copyright Francisco Luna, todos los derechos reservados">
+            Copyright © Francisco Luna. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
