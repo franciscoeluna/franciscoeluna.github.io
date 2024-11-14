@@ -59,6 +59,7 @@ div[id] {
 body, section {
     background-color: rgb(241, 241, 241);
     text-align: center;
+    overflow-x: hidden;
 }
 
 /* Títulos */
@@ -73,12 +74,13 @@ h3 {
 /* Sobre Mi */
 p {
     font-size: 20px;
+    max-width: 990px;
     text-transform: none;
     text-align: justify;
-    letter-spacing: .2px;
+    letter-spacing: .5px;
     text-wrap: pretty;
-    line-height: 27px;
-    margin: 0 130px;
+    line-height: 28px;
+    margin: auto;
 }
 
 /* Habilidades */
@@ -109,8 +111,8 @@ p {
     align-items: center;
     background: linear-gradient(rgb(235, 235, 235), rgb(219, 219, 219));
     box-shadow: 0 10px 15px -3px rgb(0, 0, 0, 0.4);
-    height: 255px;
-    width: 140px;
+    height: 265px;
+    width: 150px;
     border-radius: 16px;
     transform: scale(1);
     transition: transform 0.4s ease, top 0.4s ease, left 0.4s ease;
@@ -118,7 +120,7 @@ p {
 }
 
 .bloque--python {
-    background: linear-gradient(rgb(108, 152, 219), rgb(171, 198, 238));
+    background: linear-gradient(rgb(113, 158, 224), rgb(171, 197, 235));;
 }
 
 .bloque--pandas {
@@ -144,92 +146,60 @@ p {
     height: auto;
 }
 
-/* Proyecto-1 */
-.proyectos .bloque--rentabilidad, .bloque--gestion_ventas {
-    background-color: rgb(252, 252, 252, .85);
+.proyectos .bloque--analisis, .bloque--gestion_ventas {
+    background-color: rgb(245, 245, 245, .85);
     box-shadow: 1px 8px 15px -2px rgb(0, 0, 0, 0.4);
     display: inline-block;
     position: relative;
-    width: 330px;
-    height: 210px;
-    cursor: pointer;
+    width: 350px;
+    height: 440px;
     overflow: hidden;
     border-radius: 16px;
-    margin: 0 8px;
+    margin: 0 10px;
 }
 
-.proyectos .bloque--rentabilidad img, .bloque--gestion_ventas img {
+.proyectos .bloque--analisis img, .bloque--gestion_ventas img {
     justify-content: center;
     align-items: center;
-    width: 70%;
-    height: 70%;
-    padding-top: 40px;
+    width: 100%;
+    height: 40%;
+    padding: 25px;
     transition: all 400ms ease-out;
     will-change: transform;
+    background-color: rgb(202, 202, 202);
 }
 
-.proyectos .bloque--rentabilidad .capa, .bloque--gestion_ventas .capa {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(44, 44, 44, 0.945);
-    transition: all 400ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-    cursor: auto;
+.proyectos .bloque--gestion_ventas img {
+    background-color: rgb(159, 182, 216)
 }
 
-.proyectos .bloque--rentabilidad:hover > .capa, .bloque--gestion_ventas:hover > .capa {
-    opacity: 1;
-    visibility: visible;
+.proyectos .bloque--analisis p, .bloque--gestion_ventas p {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+    margin: 30px;
 }
 
-.proyectos .bloque--rentabilidad:hover > img, .bloque--gestion_ventas:hover > img {
-    transform: scale(1.2);
+.proyectos .bloque--analisis a, .bloque--gestion_ventas a {
+    display: flex;
+    margin: 20px 30px;
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+    cursor: pointer;
+    text-underline-offset: 1.5px;
 }
 
-.proyectos .bloque--rentabilidad a, .bloque--gestion_ventas a {
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    padding: 1px 40px;
-    border: 2px solid rgb(147, 183, 212);
-    border-radius: 40px;
+.proyectos .bloque--analisis a:hover, .bloque--gestion_ventas a:hover {
+    color: rgb(98, 148, 224);
     text-decoration: none;
-}
-
-.proyectos .bloque--rentabilidad a:hover {
-    background-color: rgb(147, 183, 212);
-}
-
-.proyectos .bloque--rentabilidad .capa p, .bloque--gestion_ventas .capa p {
-    font-size: 20px;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    margin: 25px 40px;
-    transition: all 400ms ease-out;
-    text-align: center;
-}
-
-/* Proyecto-2 */
-.bloque--gestion_ventas {
-    background-color: rgba(215, 215, 215);
-}
-
-.proyectos .bloque--gestion_ventas a {
-    border: 2px solid rgb(284, 184, 100);
-}
-
-.proyectos .bloque--gestion_ventas a:hover {
-    background-color: rgb(284, 184, 100);
 }
 
 /* Contacto */
 .contacto {
     display: block;
     width: 100%;
-    background-image: linear-gradient(to top, rgb(165, 197, 233) 0%, rgb(231, 240, 253) 100%);
+    background-image: linear-gradient(to top, rgb(145, 180, 219) 0%, rgb(221, 230, 243) 100%);
     padding-bottom: 50px;
 }
 
@@ -259,7 +229,7 @@ p {
 
 .formulario-input-mensaje {
     resize: none;
-    padding: 1.8em 1em 4em;
+    padding: 1.8em 1em 5em;
     margin-bottom: 1.5em;
 }
 
@@ -303,44 +273,44 @@ footer {
 
 /* Responsive */
 
-/* Celular */
-@media (max-width: 768px) {
+/* Celular estadar*/
+@media (max-width: 576px) {
     div[id] {
         scroll-margin-top: 75px;
     }
 
     /* Particulas */
     #particles-js {
-        height: 75vh;
+        height: 70vh;
     }
 
-    /* Sobre Mi */
-    p{
-        font-size: 18px;
-        margin: 0 40px;
-    }
-
-    /* Lenguajes */
     .lenguajes {
         height: 190px;
         width: 190px;
     }
 
+    /* Sobre Mi */
+    p{
+        font-size: 19px;
+        max-width: 300px;
+    } 
+
+    /* Habilidades */
     .habilidades img {
-        height: 85px;
-        width: 85px;
+        height: 90px;
+        width: 90px;
         margin: 5px 100px 5px 10px;
     }
 
     .bloque--mysql, .bloque--python, .bloque--pandas, .bloque--numpy, .bloque--powerbi {
         background: linear-gradient(90deg, rgb(235, 235, 235), rgb(219, 219, 219));
-        height: 100px;
-        width: 290px;
+        height: 110px;
+        width: 295px;
         margin: 8px;
     }
 
     .bloque--python {
-        background: linear-gradient(90deg, rgb(117, 161, 228), rgb(171, 198, 238));
+        background: linear-gradient(90deg, rgb(113, 158, 224), rgb(171, 197, 235));
     }
 
     .bloque--pandas {
@@ -356,13 +326,28 @@ footer {
     }
 
     /* Proyectos */
-    .proyectos .bloque--rentabilidad, .bloque--gestion_ventas {
-        margin: 8px;
+    .proyectos .bloque--analisis, .bloque--gestion_ventas {
+        width: 310px;
+        height: 395px;
+        margin: 10px;
+    }
+
+    .proyectos .bloque--analisis p, .bloque--gestion_ventas p {
+        font-size: 23px;
+        margin: 30px;
+    }
+
+    .proyectos .bloque--analisis a, .bloque--gestion_ventas a {
+        margin: 40px 30px;
     }
 
     /* Contacto */
     .formulario {
         width: 85%;
+    }
+
+    .formulario-input-mensaje {
+        padding: 1.8em 1em 5em;
     }
 
     /* Footer */
@@ -372,17 +357,115 @@ footer {
     }
 }
 
+/* Celular grande */
+@media (min-width: 577px) and (max-width: 768px) {
+
+    /* Sobre Mi */
+    p{
+        font-size: 22px;
+        max-width: 430px;
+    }
+
+    /* Habilidades */
+    .habilidades img {
+        height: 110px;
+        width: 110px;
+        margin: 5px 100px 5px 10px;
+    }
+
+    .bloque--mysql, .bloque--python, .bloque--pandas, .bloque--numpy, .bloque--powerbi {
+        background: linear-gradient(90deg, rgb(235, 235, 235), rgb(219, 219, 219));
+        height: 130px;
+        width: 370px;
+        margin: 8px;
+    }
+
+    .bloque--python {
+        background: linear-gradient(90deg, rgb(113, 158, 224), rgb(171, 197, 235));
+    }
+
+    .bloque--pandas {
+        background: linear-gradient(90deg, rgb(219, 219, 219), rgb(253, 253, 253));
+    }
+
+    .bloque--numpy {
+        background: linear-gradient(90deg, rgb(177, 193, 231), rgb(230, 230, 230));
+    }
+    
+    .bloque--powerbi {
+        background: linear-gradient(90deg, rgb(241, 147, 124), rgb(243, 199, 77));
+    }
+
+    /* Proyectos */
+    .proyectos .bloque--analisis, .bloque--gestion_ventas {
+        width: 380px;
+        height: 470px;
+        margin: 10px;
+    }
+
+    /* Contacto */
+    .formulario {
+        width: 80%;
+    }
+
+    .formulario-input-mensaje {
+        padding: 1.8em 1em 6em;
+    }
+
+}
+
 /* Tablet */
 @media (min-width: 769px) and (max-width: 990px) {
-    .bloque--python, .bloque--pandas, .bloque--powerbi, .bloque--mysql {
-        margin: 12px 8px;
-        height: 210px;
+
+    /* Sobre Mi*/
+    p {
+        font-size: 22px;
+        max-width: 550px;
+    }
+
+    /* Habilidades */
+    .habilidades img {
+        height: 130px;
+        width: 130px;
+    }
+
+    .bloque--mysql, .bloque--python, .bloque--pandas, .bloque--numpy, .bloque--powerbi {
+        height: 290px;
+        width: 190px;
+        margin: 12px 10px;
+    }
+
+    /* Contacto */
+    .formulario {
+        width: 90%;
+    }
+
+    .formulario-input-mensaje {
+        padding: 1.8em 1em 6.5em;
+    }
+
+    /* Footer */
+    .copyright {
+        font-size: 13px;
+        padding: 8px;
     }
 }
 
-/* Pc */
-@media (min-width: 991px) {
+/* Notebook */
+@media (min-width: 991px)  and (max-width: 1199px) {
+
+    /* Sobre Mi */
+    p {
+        font-size: 22px;
+        max-width: 720px;
+    }
+
+    /* Habilidades */
     .bloque--mysql, .bloque--python, .bloque--pandas, .bloque--numpy, .bloque--powerbi {
         margin: 10px 7px;
     }
+
 }
+
+/* Pc Escritorio */
+/* @media (min-width: 1200px) {} */
